@@ -1,0 +1,178 @@
+.home-main {
+    display: block;
+
+    > section:not(.home-slider) {
+        max-width: 1500px;
+        margin: 0 auto;
+        padding: 0 20px;
+    }
+
+    > section:not(:last-child) {
+        margin-bottom: 30px;
+    
+        @media (min-width: $bp-medium) {
+            margin-bottom: 90px;
+        }
+    }
+}
+
+.home-about {
+
+    &-copy {
+        width: 100%;
+        font-size: 24px;
+        line-height: 36px;
+        font-weight: 300;
+
+        @media (min-width: $bp-large) {
+            width: 60%;
+            max-width: calc(100% - 327px);
+            margin: 0 0 24px;
+            float: left;
+        }
+
+        @media (min-width: $bp-xlarge) {
+            max-width: calc(100% - 436px);
+        }
+    }
+
+    &-logo {
+        float: right;
+        width: 307px;
+        height: 31px;
+        background: url('/assets/svg/asset32.svg') center/contain no-repeat;
+
+        @media (min-width: $bp-xlarge) {
+            width: 416px;
+            height: 42px;
+        }
+    }
+
+    @include clearfix;
+}
+
+.home-links {
+
+    ul {
+        margin: 0 0 24px;
+        padding: 0;
+        list-style: none;
+
+        @include clearfix;
+    }
+    
+    &-primary {
+
+        @media (min-width: $bp-large) {
+            height: 200px;
+        }
+
+        li {
+            display: block;
+            width: 100%;
+            margin: 0 0 24px;
+            padding: 0;
+            height: auto;
+
+            @media (min-width: $bp-large) {
+                float: left;
+                width: calc((100% - 48px) / 3);
+                height: 200px;
+
+                &:not(:last-child) {
+                    margin-right: 24px;
+                }
+            }
+
+            a {
+                display: block;
+                position: relative;
+                padding: 20px 0 20px 100px;
+                margin: 0;
+                height: 100%;
+                background-color: $c-navy;
+                background-image: url('/assets/svg/asset2.svg');
+                background-repeat: no-repeat;
+                background-position: top 31px left 32px;
+                color: $c-white;
+                text-decoration: none;
+                transition: transform .1s;
+
+                &:hover {
+                    transform: scale(1.025);
+                }
+
+                @media (min-width: $bp-large) {
+                    padding: 98px 0 0 32px;
+                }
+
+                span {
+                    font-size: 22px;
+                    line-height: 33px;
+                    font-weight: 400;
+                    text-transform: uppercase;
+                    user-select: none;
+
+                    @media (min-width: $bp-large) {
+                        font-size: 26px;
+                    }
+                }
+            }
+        }
+    }
+
+    &-secondary {
+
+        li {
+            display: block;
+            margin-bottom: 24px;
+            float: left;
+
+            @media (max-width: ($bp-medium - 1)) {
+                width: calc((100% - 24px) / 2);
+
+                &:not(:nth-child(2n)) {
+                    margin-right: 24px;
+                }
+            }
+
+            @media (min-width: $bp-medium) and (max-width: ($bp-large - 1)) {
+                width: calc((100% - 48px) / 3);
+
+                &:not(:nth-child(3n)) {
+                    margin-right: 24px;
+                }
+            }
+
+            @media (min-width: $bp-large) {
+                width: calc((100% - (24px * 5)) / 6);
+
+                &:not(:nth-child(6n)) {
+                    margin-right: 24px;
+                }
+            }
+
+            a {
+                display: block;
+                height: 38px;
+                line-height: 38px;
+                padding: 0 35px 0 17px;
+                background-color: $c-blue;
+                font-size: 12px;
+                font-weight: 600;
+                text-decoration: none;
+                text-transform: uppercase;
+                user-select: none;
+                color: $c-white;
+                background-position: right 15px center;
+                background-repeat: no-repeat;
+                background-image: url('/assets/svg/asset3.svg');
+                transition: background-color .3s;
+
+                &:hover {
+                    background-color: $c-navy;
+                }
+            }
+        }
+    }
+}

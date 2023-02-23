@@ -1,0 +1,29 @@
+//Typography
+
+$f-stack: 'Open-Sans', sans-serif;
+
+//Colours
+
+$c-black: #000000;
+$c-white: #FFFFFF;
+$c-grey: #061C2C;
+$c-blue: #244AC2;
+$c-navy: #061C2C;
+
+$c-text: $c-grey;
+
+// Media Breakpoints
+
+$bp-medium: 745px;
+$bp-large: 925px;
+$bp-xlarge: 1100px;
+
+// Mixins
+
+@mixin clearfix {
+    &:after {
+        content: '';
+        display: table;
+        clear: both;
+    } 
+}

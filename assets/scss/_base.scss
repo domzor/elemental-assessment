@@ -1,0 +1,16 @@
+* {
+    box-sizing: border-box;
+    transition: .1s;
+}
+
+body {
+    font-family: $f-stack;
+    color: $c-text;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+img {
+    max-width: 100%;
+}

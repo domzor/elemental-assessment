@@ -1,0 +1,16 @@
+{
+  "name": "elemental-assessment",
+  "author": "Dominic van Blerk",
+  "version": "1.0.0",
+  "description": "Assessment for Elemental",
+  "license": "ISC",
+  "main": "index.html",
+  "devDependencies": {
+    "live-server": "^1.2.2",
+    "sass": "^1.58.3"
+  },
+  "scripts": {
+    "start": "live-server",
+    "sass-watch": "sass --watch assets/scss:assets/css"
+  }
+}

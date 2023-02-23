@@ -1,0 +1,117 @@
+.slider {
+    position: relative;
+}
+
+.slider-container {
+    max-width: 1620px;
+    width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+
+    &:before {
+        content: "";
+        display: block;
+        position: absolute;
+        top: 50%;
+        left: 0;
+        margin-top: -60px;
+        width: 50%;
+        height: 120px;
+        background-color: $c-blue;
+    }
+
+    &:after {
+        content: "";
+        display: block;
+        position: absolute;
+        top: 50%;
+        right: 0;
+        margin-top: -60px;
+        width: 50%;
+        height: 120px;
+        background-color: $c-black;
+    }
+
+    .slider-inner {
+        position: relative;
+    }
+
+    .slider-next {
+        display: block;
+        position: absolute;
+        top: 50%;
+        right: 0;
+        z-index: 3;
+        width: 80px;
+        height: 80px;
+        margin-top: -40px;
+        background-image: url('/assets/svg/slider-next.svg');
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: right center;
+        cursor: pointer;
+        transition: transform .1s;
+
+        &:hover {
+            transform: translate3d(10px, 0, 0);
+            width: 90px;
+        }
+
+        @media (min-width: $bp-large) {
+            width: 101px;
+            height: 118px;
+            margin-top: -59px;
+
+            &:hover {
+                transform: translate3d(10px, 0, 0);
+                width: 111px;
+            }
+        }
+    }
+
+    ul {
+        display: flex;
+        position: relative;
+        z-index: 1;
+        margin: 0 0 0 -100%;
+        padding: 0;
+        list-style: none;
+
+        li {
+            display: block;
+            position: relative;
+            margin: 0;
+            padding: 0;
+            width: 100%;
+
+            h3 {
+                display: block;
+                position: absolute;
+                left: 0;
+                top: 50%;
+                width: 50%;
+                padding: 10px 20px;
+                color: $c-white;
+                background-color: $c-blue;
+                font-size: 22px;
+                line-height: 30px;
+                font-weight: 600;
+                text-transform: uppercase;
+                user-select: none;
+
+                @media (min-width: $bp-large) {
+                    width: auto;
+                    height: 120px;
+                    margin-top: -60px;
+                    padding: 0 100px 0 60px;
+                    font-size: 25px;
+                    line-height: 120px;
+                }
+            }
+
+            img {
+                width: 100%;
+            }
+        }
+    }
+}
