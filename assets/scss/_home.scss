@@ -40,7 +40,7 @@
         float: right;
         width: 307px;
         height: 31px;
-        background: url('/assets/svg/asset32.svg') center/contain no-repeat;
+        background: url('../svg/asset32.svg') center/contain no-repeat;
 
         @media (min-width: $bp-xlarge) {
             width: 416px;
@@ -91,7 +91,7 @@
                 margin: 0;
                 height: 100%;
                 background-color: $c-navy;
-                background-image: url('/assets/svg/asset2.svg');
+                background-image: url('../svg/asset2.svg');
                 background-repeat: no-repeat;
                 background-position: top 31px left 32px;
                 color: $c-white;
@@ -166,7 +166,7 @@
                 color: $c-white;
                 background-position: right 15px center;
                 background-repeat: no-repeat;
-                background-image: url('/assets/svg/asset3.svg');
+                background-image: url('../svg/asset3.svg');
                 transition: background-color .3s;
 
                 &:hover {
