@@ -10,6 +10,6 @@ This test took around 4 hours to complete. The slider gave me a bit more trouble
 
 Run locally using live-server.
 
-### `npm run sass-watch`
+### `gulp watch`
 
-Watch for .scss changes and compile on save.
+Watch for .scss changes and compile on save. Requires [Gulp](https://gulpjs.com/).
